@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'users',
+    'galaxies',
+    'posts',
+    'comments',
 ]
 
 AUTH_USER_MODEL = 'users.MyUser'
