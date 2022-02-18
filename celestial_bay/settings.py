@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
+    'rest_framework_simplejwt.token_blacklist',
 
     'users',
     'galaxies',
@@ -51,12 +52,8 @@ INSTALLED_APPS = [
 AUTH_USER_MODEL = 'users.MyUser'
 
 CORS_ALLOWED_ORIGINS = [
-    'http://127.0.0.1:5500',
+    'http://127.0.0.1:8080',
 ]
-
-CSRF_TRUSTED_ORIGINS = [
-        'http://siteyouwantto.allow.com',
-    ]
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
